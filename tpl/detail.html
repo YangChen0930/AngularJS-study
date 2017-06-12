@@ -1,0 +1,64 @@
+
+<div data-role="page" ng-controller="detailCtr">
+    <div data-role="header">
+        <a href="#" data-icon="back" data-rel="back" data-iconpos="notext"></a>
+        <h1>开饭啦</h1>
+    </div>
+    <div class="ui-content">
+        <h1>{{dish.name}}</h1>
+        <img ng-src="../img/{{dish.img_lg}}" alt=""/>
+        <p>{{dish.material}}</p>
+        <p>{{dish.detail}}</p>
+        <p>{{dish.price | currency:'￥'}}</p>
+
+        <button ng-click="jump('order.html')">我要下单</button>
+        <button ng-click="jump('main.html')">我再看看</button>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="" data-icon="home">主页</a></li>
+                <li><a href="" data-icon="user">用户中心</a></li>
+                <li><a href="" data-icon="gear">设置</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--
+<div ng-include=" 'tpl/include/header.html' "></div>
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="#main">首页</a></li>
+        <li>详情</li>
+    </ul>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="page-header">
+                <h3>{{dish.name}}</h3>
+            </div>
+            <div class="text-center">
+                <img ng-src="img/{{dish.img_lg}}" class="img-responsive">
+            </div>
+            <div class="text-justify well">
+                <p class="lead">{{dish.material}}</p>
+                <p>{{dish.detail}}</p>
+                <div class="price text-success">{{dish.price | currency:'￥'}}</div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="text-right">
+                <button type="button" class="btn btn-success" ng-click="jump('/order/'+dish.did)">我要订餐</button>
+                <button type="button" class="btn btn-warning" ng-click="jump('/main')">我再看看</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+
+<div ng-include=" 'tpl/include/footer.html' "></div>-->

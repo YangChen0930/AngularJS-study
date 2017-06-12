@@ -1,0 +1,92 @@
+body{
+    font-family: 'SimHei' !important;
+    margin: 50px 0 100px 0;
+}
+.start{
+    margin-top:150px;
+    font-size:8em;
+}
+/*ҳ��*/
+.navbar-footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar-footer-menu li {
+    display: inline-block;
+    line-height: 50px;
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+}
+.navbar-footer-menu li:hover {
+    background: #eee;
+}
+
+/*����*/
+.search {
+    margin-top:20px;
+}
+/*�۸�*/
+.price {
+    color: #f00;
+    padding-top: 5px;
+    font-size: 1.2em;
+}
+/*����ҳ�ϵĵ������м*/
+.container .breadcrumb{
+    margin-top: 20px;
+    margin-bottom:0px;
+}
+
+/*����ҳ�ϵĲ�Ʒ����*/
+.panel-body .page-header,.panel-body .page-header h3{
+    margin-top:0px;
+}
+
+/*��������*/
+.order-table>tbody>tr>td{
+    vertical-align: middle;
+}
+
+/*�����������*/
+.page {
+    position: absolute;
+    width: 100%;
+}
+.page.ng-enter,
+.page.ng-leave {
+    -webkit-transition: .5s linear all;
+    -moz-transition: .5s linear all;
+    -ms-transition: .5s linear all;
+    -o-transition: .5s linear all;
+    transition: .5s linear all;
+}
+.page.ng-leave {
+    left: 0;
+    opacity: 1;
+}
+.page.ng-leave.ng-leave-active {
+    left: -100%;
+    opacity: 0;
+}
+.page.ng-enter {
+    left: 100%;
+    opacity: 0;
+}
+.page.ng-enter.ng-enter-active {
+    left: 0;
+    opacity: 1;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.align-center{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
